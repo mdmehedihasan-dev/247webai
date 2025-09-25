@@ -4,7 +4,6 @@ import ErrorBoundary from "../errorBoundary/ErrorBoundary";
 import Website from "../components/layout/Website";
 import Pricing from "../Pages/pricing/Pricing";
 import ScriptToVideo from "../Pages/scriptToVideo/ScriptToVideo";
-import AiVideoClip from "../Pages/aiVideoClip/aiVideoClip";
 import AIImageGenerator from "../Pages/aiImageGenerator/AIImageGenerator";
 import TextToVideo from "../Pages/textToVideo/TextToVideo";
 import AutoCaption from "../Pages/autoCaption/AutoCaption";
@@ -22,7 +21,6 @@ import AIVideoClipGenerator from "../Dashboard/AIVideoClipGenerator/AIVideoClipG
 import AnalyticsSeoTools from "../Dashboard/AnalyticsSeoTools/AnalyticsSeoTools";
 import TextToVideoGenerator from "../Dashboard/TextToVideoGenerator/TextToVideoGenerator";
 import RealisticVoiceovers from "../Dashboard/RealisticVoiceovers/RealisticVoiceovers";
-// import AutoVideoEditing from "../Dashboard/AutoVideoEditing/AutoVideoEditing";
 import AutoCaptionHashtags from "../Dashboard/AutoCaptionHashtags/AutoCaptionHashtags";
 import AiVideoGenerator from "../Pages/aiVideoGenerator/AiVideoGenerator";
 import Signup from "../Dashboard/Auth/Signup";
@@ -38,6 +36,8 @@ import AutoVideoEditingDashboard from "../Dashboard/AutoVideoEditing/AutoVideoEd
 import AutoVideoEditing from "../Pages/autoVideoEditing/AutoVideoEditing";
 import ChatbotSupport from "../Dashboard/ChatbotSupport/ChatbotSupport";
 import MainChatSupport from "../components/Chatboat/MainChatSupport";
+import AiVideoClip from "../Pages/aiVideoClip/AiVideoClip.jsx";
+import AnalyticsSeo from "../Pages/analyticsSeoTools/AnalyticsSeo.jsx";
 
 const router = createBrowserRouter([
   {
@@ -116,19 +116,6 @@ const router = createBrowserRouter([
         path: "sign-up", // Signup route, relative to /dashboard
         element: <Signup />,
       },
-      // Uncomment and add other authentication-related routes when needed
-      // {
-      //   path: "forgate-password",
-      //   element: <ForgatePassword />,
-      // },
-      // {
-      //   path: "verify-code",
-      //   element: <VerifyCode />,
-      // },
-      // {
-      //   path: "new-password",
-      //   element: <NewPass />,
-      // },
       {
         path: "", // Main layout for authenticated users, dashboard as default
         element: <MainLayout />,
